@@ -31,7 +31,7 @@ class App extends React.Component {
         return (
             <div className={style.TodoApp}>
                 Tutaj pojawią się komponenty naszej aplikacji.
-                {/*<button onClick={this.addTodo("asdasd")}> Click Me</button>*/}
+                <button onClick={() => this.addTodo("asdasd")}> Click Me</button>
                 <Title data={this.state.data}/>
             </div>
         );

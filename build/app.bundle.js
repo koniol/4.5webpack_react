@@ -8447,11 +8447,19 @@ var App = function (_React$Component) {
     }, {
         key: 'render',
         value: function render() {
+            var _this2 = this;
 
             return _react2.default.createElement(
                 'div',
                 { className: _App2.default.TodoApp },
                 'Tutaj pojawi\u0105 si\u0119 komponenty naszej aplikacji.',
+                _react2.default.createElement(
+                    'button',
+                    { onClick: function onClick() {
+                            return _this2.addTodo("asdasd");
+                        } },
+                    ' Click Me'
+                ),
                 _react2.default.createElement(_Title2.default, { data: this.state.data })
             );
         }
@@ -8498,19 +8506,24 @@ var Title = function (_React$Component) {
 
     _createClass(Title, [{
         key: 'render',
-
-        // get data(){
-        //     return this.props.data.map( list => {
-        //         <h1>list</h1>
-        //     });
-        // }
-
         value: function render() {
             return _react2.default.createElement(
                 'div',
                 null,
-                this.props.data
+                this.data
             );
+        }
+    }, {
+        key: 'data',
+        get: function get() {
+            console.log(this.props.data);
+            return this.props.data.map(function (list) {
+                _react2.default.createElement(
+                    'h1',
+                    { key: list.id },
+                    'aaaa'
+                );
+            });
         }
     }]);
 
