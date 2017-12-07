@@ -1,12 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 .TodoApp {
+    font-family: 'Montserrat', sans-serif;
+    color: #b8bcc0;
     background-color: #F5F5F5;
-    color: #222;
+    color: #4d4d4d;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+    /*justify-content: center;*/
+    /*align-items: center;*/
     align-content: center;
     width: 100vw;
     height: 100vh;
 }
+.TaskHeader{
+    padding: 10px 0 10px 10px;
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+    width: 80%;
+    display: inline-block;
+@include filter-gradient(#fcfcfc, #e5e5e5, vertical);
+@include background-image(linear-gradient(top, #fcfcfc 0%,#e5e5e5 100%));
+}
+.Task{
+    background: #E9EDF1;
+    border-radius: 5px;
+    border: 1px solid #D1D1D1;
+    width: 250px;
+    margin: 20px;
+}
+
+.Task ul{
+    padding:0;
+    margin: 0;
+    background: white;
+    border: none;
+}
+.Task .fa-header-task{
+    transform: rotate(10deg);
+}
+.Task ul li i:first-child{
+    color: #02ac46;
+}
+.Task ul li{
+    border-top:1px solid #D1D1D1;
+    list-style: none;
+    padding:10px 10px;
+}
+.Task ul li i { color: #F1F1F1; }

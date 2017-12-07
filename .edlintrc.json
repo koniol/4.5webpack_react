@@ -1,0 +1,14 @@
+{
+  "plugins": [
+    "react"
+  ],
+  "extends": "airbnb-base",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "rules": {
+    "no-set-state": "off",
+    "quotes": [ "error", "double" ]
+  }
+}
