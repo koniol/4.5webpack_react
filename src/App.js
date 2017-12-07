@@ -9,7 +9,6 @@ class App extends React.Component {
         this.state = {
             data: [],
         };
-
     }
 
     addTodo(val){
@@ -27,12 +26,13 @@ class App extends React.Component {
     }
 
     render() {
-
         return (
             <div className={style.TodoApp}>
                 Tutaj pojawią się komponenty naszej aplikacji.
-                <button onClick={() => this.addTodo("asdasd")}> Click Me</button>
-                <Title data={this.state.data}/>
+                {/*<button onClick={() => this.addTodo("asdasd")}> Click Me</button>*/}
+                <Title title="Task 1"/>
+                <Title title="Task 2"/>
+                <Title title="Task 3"/>
             </div>
         );
     }
