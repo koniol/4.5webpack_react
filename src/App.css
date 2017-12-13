@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+input{
+    padding: 5px;
+    border: 1px solid #d2d2d2;
+    border-radius: 2px;
+    margin-left: 20px;
+    width: 240px;
+}
+
 .TodoApp {
     font-family: 'Montserrat', sans-serif;
     color: #b8bcc0;
@@ -48,5 +56,9 @@
     border-top:1px solid #D1D1D1;
     list-style: none;
     padding:10px 10px;
+}
+.Task ul li:hover{
+    background: #e5e9ed;
+    cursor: pointer;
 }
 .Task ul li i { color: #F1F1F1; }
