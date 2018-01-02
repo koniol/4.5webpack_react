@@ -56,6 +56,7 @@ class App extends React.Component {
             <div className={style.TodoApp}>
                 <TodoForm send={(event) => this.onSubmit(event)}
                           change={(event) => this.onChangeHandle(event)}
+                          value={this.state.addText}
                 />
                 <div className={style.Task}>
                     <Title title="Task"/>
@@ -68,16 +69,6 @@ class App extends React.Component {
     }
 }
 
-// if (module.hot) {
-//     module.hot.accept('./containers/App', () => {
-//         const NextApp = require('./containers/App').default;
-//         ReactDOM.render(
-//             <AppContainer>
-//                 <NextApp />
-//             </AppContainer>,
-//             document.getElementById('app')
-//         );
-//     });
-// }
+
 
 export default App;

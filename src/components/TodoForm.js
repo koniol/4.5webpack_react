@@ -6,7 +6,7 @@ function TodoForm(props) {
             <input
                 type="text"
                 onChange={event => props.change(event)}
-                value={props.addText}
+                value={props.value}
                 placeholder={"Add item to list"}
             />
         </form>
@@ -14,4 +14,3 @@ function TodoForm(props) {
 }
 
 export default TodoForm;
-

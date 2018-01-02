@@ -18,11 +18,11 @@ module.exports = {
         template: 'src/index.html',
         filename: 'index.html',
         inject: 'body'
-    })],
-    plugins: [new OptimizeJsPlugin({
-        sourceMap: false
-    })],
-    plugins: [new webpack.optimize.UglifyJsPlugin()],
+    }),
+        new OptimizeJsPlugin({
+            sourceMap: false
+        }),
+        new webpack.optimize.UglifyJsPlugin()],
     module: {
         rules: [
             {
@@ -32,7 +32,7 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: [
-                    { loader: 'style-loader'},
+                    {loader: 'style-loader'},
                     {
                         loader: 'css-loader',
                         options: {
